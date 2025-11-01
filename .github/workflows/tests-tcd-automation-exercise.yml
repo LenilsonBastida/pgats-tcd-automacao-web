@@ -32,9 +32,11 @@ jobs:
       with:
         browser: chrome
         headless: true
-        spec: cypress/e2e/automation-exercise-complete-flow-modules.cy.js
+        spec: cypress/e2e/tcd-automation-exercise.cy.js
         record: false
         parallel: false
+        component: false
+        publish-summary: true
 
     - name: Upload test results
       uses: actions/upload-artifact@v4
